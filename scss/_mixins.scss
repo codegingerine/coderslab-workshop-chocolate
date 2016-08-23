@@ -50,6 +50,14 @@
 	transform: $properties;
 }
 
+@mixin animation($properties) {
+    -moz-animation: $properties;
+    -o-animation: spin-horizontal $properties;    
+    -webkit-animation: spin-horizontal $properties;
+    -ms-animation: $properties; 
+    animation: $properties;
+}
+
 @mixin border-radius($properties) {
 	border-radius: $properties;
     -moz-border-radius: $properties;
